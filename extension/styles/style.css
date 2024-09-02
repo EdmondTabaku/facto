@@ -1,0 +1,63 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    height: 550px;
+    background: radial-gradient(circle, #506d8e 0%,  #2f435b 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.fake {
+    background: radial-gradient(circle, #8e5050 0%,  #5b2f2f 100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.real {
+    background: radial-gradient(circle, #508e50 0%,  #2f5b2f 100%);
+    transition: all 0.5s ease-in-out;
+}
+
+#robot {
+    margin: 0 auto;
+}
+
+.check {
+    margin: 0 auto;
+    padding: 15px 25px;
+    background-color: #2a9d8f;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+    cursor: pointer;
+    -webkit-box-shadow: 4px 4px 25px -5px rgba(0,0,0,0.68);
+    -moz-box-shadow: 4px 4px 25px -5px rgba(0,0,0,0.68);
+    box-shadow: 4px 4px 25px -5px rgba(0,0,0,0.68);
+    transition: all 0.3s ease-in-out;
+}
+
+.check:hover {
+    background-color: #21867a;
+    transition: all 0.3s ease-in-out;
+}
+
+#robotText,
+#confidence{
+    font-size: 17px;
+    text-align: center;
+    max-width: 350px;
+    margin: 0 auto;
+}

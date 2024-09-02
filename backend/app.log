@@ -1,0 +1,30 @@
+2024-08-14 21:27:48,162 INFO: DB Initialized
+2024-08-14 21:27:49,538 INFO: DB Initialized
+2024-08-14 21:31:07,513 INFO: DB Initialized
+2024-08-14 21:31:10,634 INFO: DB Initialized
+2024-08-14 21:31:12,274 INFO: DB Initialized
+2024-08-14 22:29:59,417 INFO: DB Initialized
+2024-08-14 22:30:00,702 INFO: DB Initialized
+2024-08-14 22:36:01,031 INFO: DB Initialized
+2024-08-14 22:36:19,046 INFO: DB Initialized
+2024-08-14 22:36:20,513 INFO: DB Initialized
+2024-08-14 22:58:06,111 INFO: DB Initialized
+2024-08-14 22:58:07,714 INFO: DB Initialized
+2024-08-15 16:04:53,591 INFO: DB Initialized
+2024-08-15 16:04:55,162 INFO: DB Initialized
+2024-08-15 16:35:47,226 INFO: DB Initialized
+2024-08-15 16:35:48,532 INFO: DB Initialized
+2024-09-02 16:24:31,355 ERROR: Failed to initialize database: (pymysql.err.OperationalError) (1044, "Access denied for user 'yeti'@'localhost' to database 'predicter'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-09-02 16:24:32,660 ERROR: Failed to initialize database: (pymysql.err.OperationalError) (1044, "Access denied for user 'yeti'@'localhost' to database 'predicter'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-09-02 16:34:44,685 INFO: DB Initialized
+2024-09-02 16:34:46,008 INFO: DB Initialized
+2024-09-02 17:12:38,988 INFO: DB Initialized
+2024-09-02 17:12:40,593 INFO: DB Initialized
+2024-09-02 17:17:55,412 INFO: DB Initialized
+2024-09-02 17:19:41,857 INFO: DB Initialized
+2024-09-02 17:21:00,120 ERROR: Error saving prediction to database: (pymysql.err.DataError) (1406, "Data too long for column 'news' at row 1")
+[SQL: INSERT INTO prediction (news, prediction, confidence) VALUES (%(news)s, %(prediction)s, %(confidence)s)]
+[parameters: {'news': 'Smoke rises from a fire at Konakovo Power Station In Tver Region, Russia September 1, 2024, in this screengrab from a social media video obtained by  ... (6771 characters truncated) ... s current drone fleet.\n\nCNN’s Alex Marquardt, Isaac Yee, Darya Tarasova, Maria Kostenko, Chris Liakos and Anna Chernova contributed to this report.', 'prediction': False, 'confidence': 0.99}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)

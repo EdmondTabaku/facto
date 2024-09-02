@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Print HTML</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <video id="robot" width="180" height="180" autoplay loop>
+                <source src="assets/robot.webm" type="video/webm">
+                Your browser does not support the video tag
+            </video>
+            <p id="robotText">Hello! Let's see if what you are reading contains any suspicious content...</p>
+            <p id="confidence"></p>
+            <button id="printHtml" class="check">Check the content</button>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
