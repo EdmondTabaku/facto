@@ -27,6 +27,11 @@ body, html {
     transition: all 0.5s ease-in-out;
 }
 
+.maybe {
+    background: radial-gradient(circle, #bdab45 0%, #86823e 100%);
+    transition: all 0.5s ease-in-out;
+}
+
 #robot {
     margin: 0 auto;
 }

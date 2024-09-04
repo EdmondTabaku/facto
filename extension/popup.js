@@ -28,11 +28,21 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         .then(data => {
             // Set background color based on response
             if (data.fake) {
-                container.classList.add('fake');
-                robotText.innerText = 'This news may contains fake information. Please do some more research on it!';
+                if (data.confidence && data.confidence > 0.65) {
+                    container.classList.add('fake');
+                    robotText.innerText = 'This news contains fake information.';
+                } else {
+                    container.classList.add('maybe');
+                    robotText.innerText = 'This news may contain fake information. Please do some more research on it!';
+                }
             } else {
-                container.classList.add('real');
-                robotText.innerText = 'This news does not contain fake information.';
+                if (data.confidence && data.confidence > 0.65) {
+                    container.classList.add('real');
+                    robotText.innerText = 'This news does not contain fake information.';
+                } else {
+                    container.classList.add('maybe');
+                    robotText.innerText = 'This news may contain fake information. Please do some more research on it!';
+                }
             }
             if (data.confidence) {
                 confidenceText.innerText = `Confidence: ${roundFloat(data.confidence * 100)}%`;
